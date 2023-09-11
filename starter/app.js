@@ -11,7 +11,7 @@ app.use(express.json())
 
 // routes
 app.get('/', (req, res) => {
-    res.json({"hi": "NAme"})
+    res.send("Hididjjf")
 })
 
 app.use("/api/v1/tasks", tasks)
