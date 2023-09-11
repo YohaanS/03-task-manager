@@ -6,12 +6,12 @@ require('dotenv').config()
 
 
 //middleware
-
+app.use(express.static('./public'))
 app.use(express.json())
 
 // routes
 app.get('/', (req, res) => {
-    app.use(express.static('./public'))
+    
 })
 
 app.use("/api/v1/tasks", tasks)
