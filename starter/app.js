@@ -11,7 +11,7 @@ app.use(express.json())
 
 // routes
 app.get('/', (req, res) => {
-    res.send("Hididjjf")
+    res.static('./public')
 })
 
 app.use("/api/v1/tasks", tasks)
