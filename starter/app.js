@@ -10,8 +10,8 @@ app.use(express.static('./public'))
 app.use(express.json())
 
 // routes
-app.get('/hello', (req, res) => {
-    res.send('Task Manager App')
+app.get('/', (req, res) => {
+    app.use(express.static('./public'))
 })
 
 app.use("/api/v1/tasks", tasks)
